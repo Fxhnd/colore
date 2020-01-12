@@ -240,8 +240,8 @@
 			(= (EndFn x) (BeginFn y)))))
 
 (forall (x)
-	(TimeInterval x)
-	(temporalPart x x))
+    (if (TimeInterval x)
+        (temporalPart x x)))
 
 (forall (x)
 	(if	(TimeInterval x)
